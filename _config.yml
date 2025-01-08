@@ -1,0 +1,39 @@
+#
+# This file contains configuration flags to customize your site
+#
+
+# Name of your site (displayed in the header)
+name: rusty-objects
+title: rusty-objects' blog
+
+# Short bio or description (displayed in the header/title)
+description: doin' stuff
+
+# articles per page when viewing index.html
+paginate: 1
+
+# Used for Sitemap.xml and your RSS feed
+url: https://rusty-objects.github.io
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+
+markdown: redcarpet
+highlighter: pygments
+# permalink: /:title/ # supposedly permalink and paginate don't work well together (http://jekyllrb.com/docs/pagination/)
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :expanded # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
